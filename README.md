@@ -26,7 +26,7 @@ The output images are 8-bit paletted BMPs and can be opened with any standard im
 
 ## 📁 File Structure
 
-with output
+_With outputs:_
 ```bash
 .
 ├── dip.cpp          # Main source code (BMP reader/writer and channel separation)
@@ -35,17 +35,20 @@ with output
 ├── green8.bmp       # Output: green channel (8-bit)
 ├── blue8.bmp        # Output: blue channel (8-bit)
 └── README.md        # This file
+````
 
+---
 
 # BMP Görüntülerde Renk Kanalı Ayırma ve Palet Dönüştürme
 
 ## 📌 Proje Açıklaması
 
-- **Girdi:** 24-bit BMP formatında bir görüntü (örneğin: `input.bmp`)
-- **Çıktılar:**
-  - `red8.bmp` → Sadece kırmızı kanal bilgisi, kırmızı tonlu palet ile
-  - `green8.bmp` → Sadece yeşil kanal bilgisi, yeşil tonlu palet ile
-  - `blue8.bmp` → Sadece mavi kanal bilgisi, mavi tonlu palet ile
+* **Girdi:** 24-bit BMP formatında bir görüntü (örneğin: `input.bmp`)
+* **Çıktılar:**
+
+  * `red8.bmp` → Sadece kırmızı kanal bilgisi, kırmızı tonlu palet ile
+  * `green8.bmp` → Sadece yeşil kanal bilgisi, yeşil tonlu palet ile
+  * `blue8.bmp` → Sadece mavi kanal bilgisi, mavi tonlu palet ile
 
 Çıktı dosyaları 8-bit BMP formatındadır ve BMP görüntüleyici programlarla açılabilir.
 
@@ -57,9 +60,10 @@ with output
 2. Her pikselin RGB bilgisi ayrı ayrı alınır.
 3. Renk kanalları için ayrı 8-bit BMP dosyaları hazırlanır.
 4. Her dosyaya özel palet tanımlanır:
-   - **Kırmızı paleti:** (0,0,0) → (255,0,0)
-   - **Yeşil paleti:** (0,0,0) → (0,255,0)
-   - **Mavi paleti:** (0,0,0) → (0,0,255)
+
+   * **Kırmızı paleti:** (0,0,0) → (255,0,0)
+   * **Yeşil paleti:** (0,0,0) → (0,255,0)
+   * **Mavi paleti:** (0,0,0) → (0,0,255)
 5. BMP başlıkları ve veriler manuel olarak işlenir (kütüphane kullanılmaz).
 6. Dosyalar `ImageWrite()` fonksiyonu ile kaydedilir.
 
@@ -67,7 +71,9 @@ with output
 
 ## 📁 Klasör Yapısı
 
-Çıktısı ile beraber
+*Çıktı dosyalarıyla birlikte:*
+
+```bash
 .
 ├── dip.cpp          # Ana kaynak kod (BMP okuma/yazma ve kanal ayırma)
 ├── input.bmp        # Girdi dosyası (24-bit BMP)
@@ -75,4 +81,4 @@ with output
 ├── green8.bmp       # Yeşil kanal (8-bit çıktı)
 ├── blue8.bmp        # Mavi kanal (8-bit çıktı)
 └── README.md        # Bu dosya
-şunu düzeltip bana verir misin
+```
