@@ -27,6 +27,7 @@ The output images are 8-bit paletted BMPs and can be opened with any standard im
 ## 📁 File Structure
 
 with output
+```bash
 .
 ├── dip.cpp          # Main source code (BMP reader/writer and channel separation)
 ├── input.bmp        # 24-bit input image (must be provided by the user)
